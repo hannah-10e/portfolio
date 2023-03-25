@@ -1,0 +1,73 @@
+// Generated File Do not edit!
+:root {
+	--nofill: #ffffff;
+	--neutralBlack: #000000;
+	--neutralGrey900: #212629;
+	--neutralGrey800: #333b40;
+	--neutralGrey700: #4a4f57;
+	--neutralGrey600: #878f96;
+	--neutralGrey500: #adb5bd;
+	--neutralGrey400: #cfd4d9;
+	--neutralGrey300: #dee3e6;
+	--neutralGrey200: #e8edf0;
+	--neutralGrey100: #f2f2f5;
+	--neutralGrey50: #f7fafa;
+	--neutralWhite: #ffffff;
+	--primaryBlue900: #ff660d;
+	--primaryBlue700: #1c598c;
+	--primaryBlue500: #0087ff;
+	--primaryBlue300: #66b8ff;
+	--primaryBlue100: #c7e3fa;
+	--primaryBlue50: #f5faff;
+	--primaryBlue5008percent: #0087ff;
+	--accentSuccessLight: #d4fccf;
+	--accentSuccess: #21a612;
+	--accentSuccessDark: #0a4a03;
+	--accentErrorLight: #ffeded;
+	--accentError: #e61a3d;
+	--accentErrorDark: #750800;
+	--accentWarningLight: #fff5cc;
+	--accentWarning: #e68f0f;
+	--accentWarningDark: #5c4a00;
+	--accentInfoLight: #cce6ff;
+	--accentInfo: #1469b8;
+	--accentInfoDark: #00305c;
+	--accentSkeleton: #d1d4d6;
+}
+
+// Exports are for use in Javascript
+:export {
+	nofill: var(--nofill);
+	neutralBlack: var(--neutralBlack);
+	neutralGrey900: var(--neutralGrey900);
+	neutralGrey800: var(--neutralGrey800);
+	neutralGrey700: var(--neutralGrey700);
+	neutralGrey600: var(--neutralGrey600);
+	neutralGrey500: var(--neutralGrey500);
+	neutralGrey400: var(--neutralGrey400);
+	neutralGrey300: var(--neutralGrey300);
+	neutralGrey200: var(--neutralGrey200);
+	neutralGrey100: var(--neutralGrey100);
+	neutralGrey50: var(--neutralGrey50);
+	neutralWhite: var(--neutralWhite);
+	primaryBlue900: var(--primaryBlue900);
+	primaryBlue700: var(--primaryBlue700);
+	primaryBlue500: var(--primaryBlue500);
+	primaryBlue300: var(--primaryBlue300);
+	primaryBlue100: var(--primaryBlue100);
+	primaryBlue50: var(--primaryBlue50);
+	primaryBlue5008percent: var(--primaryBlue5008percent);
+	accentSuccessLight: var(--accentSuccessLight);
+	accentSuccess: var(--accentSuccess);
+	accentSuccessDark: var(--accentSuccessDark);
+	accentErrorLight: var(--accentErrorLight);
+	accentError: var(--accentError);
+	accentErrorDark: var(--accentErrorDark);
+	accentWarningLight: var(--accentWarningLight);
+	accentWarning: var(--accentWarning);
+	accentWarningDark: var(--accentWarningDark);
+	accentInfoLight: var(--accentInfoLight);
+	accentInfo: var(--accentInfo);
+	accentInfoDark: var(--accentInfoDark);
+	accentSkeleton: var(--accentSkeleton);
+}

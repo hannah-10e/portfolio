@@ -1,0 +1,9 @@
+.rsLink {
+	text-decoration: inherit;
+	color: inherit;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	&.noPointer {
+		cursor: inherit;
+	}
+}

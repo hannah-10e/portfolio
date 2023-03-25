@@ -1,0 +1,183 @@
+.htButton {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-tap-highlight-color: transparent;
+
+	.htButtonLink {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&.containedPrimary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.containedSecondary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.containedTertiary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.outlinedPrimary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.outlinedSecondary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.outlinedTertiary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.textPrimary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.textSecondary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.textTertiary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.iconPrimary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+	&.iconSecondary {
+		&:hover {
+		}
+		&:active {
+		}
+		&:focus {
+		}
+		&.small {
+		}
+		&:disabled {
+			cursor: not-allowed;
+		}
+	}
+
+	> .ripple {
+		position: absolute;
+		background: #fff;
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+		border-radius: 50%;
+		animation: ripples 0.6s linear infinite;
+	}
+	@keyframes ripples {
+		0% {
+			width: 0;
+			height: 0;
+			opacity: 0.5;
+		}
+		100% {
+			width: 500px;
+			height: 500px;
+			opacity: 0;
+		}
+	}
+}

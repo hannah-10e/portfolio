@@ -1,38 +1,88 @@
 {
-  "name": "profile",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "profile",
+	"version": "0.1.0",
+	"main": "index.js",
+	"license": "UNLICENSED",
+	"private": true,
+	"dependencies": {
+		"@capacitor/core": "^4.2.0",
+		"@capacitor/haptics": "^4.0.1",
+		"@open-wc/webpack-import-meta-loader": "^0.4.7",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^13.1.1",
+		"@testing-library/user-event": "^13.5.0",
+		"axios": "^0.27.2",
+		"classnames": "^2.3.1",
+		"clean-webpack-plugin": "^3.0.0",
+		"copy-webpack-plugin": "^5.1.1",
+		"lodash.clone": "^4.5.0",
+		"lodash.clonedeep": "^4.5.0",
+		"primeicons": "^6.0.1",
+		"primereact": "^8.7.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"react-intersection-observer": "^9.4.2",
+		"react-phone-number-input": "^3.2.16",
+		"react-scripts": "5.0.1",
+		"react-select": "5.5.5",
+		"react-toastify": "^9.0.4",
+		"recoil": "^0.2.0",
+		"sass": "^1.53.0",
+		"spark-md5": "^3.0.1",
+		"typescript": "^4.7.4"
+	},
+	"devDependencies": {
+		"@types/jest": "^25.1.4",
+		"@types/lodash.clone": "^4.5.7",
+		"@types/lodash.clonedeep": "^4.5.7",
+		"@types/react": "^17.0.43",
+		"@types/react-dom": "^17.0.11",
+		"@types/spark-md5": "^3.0.2",
+		"@typescript-eslint/eslint-plugin": "^5.33.0",
+		"@typescript-eslint/parser": "^5.33.0",
+		"@vitejs/plugin-react": "^1.3.2",
+		"babel-eslint": "10.x",
+		"eslint": "^8.21.0",
+		"eslint-config-react-app": "^7.0.1",
+		"eslint-loader": "^4.0.2",
+		"eslint-plugin-flowtype": "^8.0.3",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-react": "^7.30.1",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.0.8",
+		"prettier": "2.6.2",
+		"sass": "^1.53.0",
+		"serve": "^14.0.1",
+		"vite": "^3.2.0",
+		"vite-imagetools": "^4.0.11",
+		"vite-plugin-css-export": "^1.1.0",
+		"vite-plugin-html": "^3.2.0"
+	},
+	"resolutions": {
+		"@types/react": "17.0.2",
+		"@types/react-dom": "17.0.2"
+	},
+	"scripts": {
+		"start": "vite --host",
+		"build": "tsc && vite build",
+		"build:debug": "tsc && vite build --mode debug",
+		"deploy": "scp -r ./build/* hanimal@45.79.26.69:/var/www/portfolio/html",
+		"prettier:check": "prettier --check ./src/**/*.{ts,tsx,js,jsx,html,scss,css,md,json}",
+		"prettier:fix-all": "prettier --write ./src/**/*.{ts,tsx,js,jsx,html,scss,css,md,json}"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{ts,tsx,js,jsx,html,scss,css,md,json}": [
+			"prettier --write"
+		]
+	}
 }

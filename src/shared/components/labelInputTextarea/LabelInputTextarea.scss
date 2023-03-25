@@ -1,0 +1,28 @@
+.htLabelInputTextarea {
+	.htLabel {
+		&.required:after {
+			content: '*';
+			color: red;
+		}
+	}
+
+	.htInputTextarea {
+		.inputTextareaContainer {
+			textarea {
+				&:focus-visible {
+				}
+			}
+
+			.floatingPlaceholder {
+				label {
+				}
+				&:focus-within label,
+				textarea:not(:placeholder-shown) + label {
+				}
+			}
+		}
+
+		.htInputErrorMessage {
+		}
+	}
+}

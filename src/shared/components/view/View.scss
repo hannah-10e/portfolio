@@ -1,0 +1,10 @@
+.htView {
+	height: 100vh;
+	position: relative;
+	display: none;
+	overflow: hidden;
+
+	&.active {
+		display: block;
+	}
+}

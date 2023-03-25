@@ -1,0 +1,36 @@
+@import '../themes';
+
+@mixin rsChip {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+	padding: 3px 12px 0;
+
+	height: 27px;
+	border-radius: 16px;
+
+	&.standard {
+		background: var(--lighterGray);
+		border: 1px solid transparent;
+		.rsLabel {
+			color: var(--lighterGray);
+			font-weight: $fwBlack;
+			user-select: none;
+		}
+	}
+
+	&.outlined {
+		background: var(--lighterGray);
+		border: 1px solid var(--lighterGray);
+		.rsLabel {
+			color: var(--lighterGray);
+			font-weight: $fwBlack;
+			user-select: none;
+		}
+	}
+}
+
+.App .rsChip {
+	@include rsChip;
+}

@@ -1,0 +1,83 @@
+.htDataTable {
+	.p-datatable {
+		//Table Header Styles
+		.p-datatable-header {
+		}
+
+		//Column Header Styles
+		.p-datatable-thead {
+			th {
+				// Column Header Content Styles
+				.p-column-header-content {
+					.p-column-title {
+					}
+					.p-sortable-column-icon {
+					}
+					.p-column-filter {
+						.p-column-filter-menu-button {
+						}
+					}
+				}
+			}
+			th.p-highlight {
+			}
+		}
+
+		// Table Body/Row Styles
+		.p-datatable-tbody {
+			tr {
+			}
+			tr.p-highlight {
+			}
+		}
+
+		// Paginator
+		.p-paginator {
+			button {
+			}
+			.p-dropdown {
+			}
+		}
+	}
+}
+
+// Column Filter Menu Styles
+.p-column-filter-overlay.p-component.p-fluid.p-column-filter-overlay-menu {
+	// Column Filter Menu Dropdown Styles (dropdown options styles are different)
+	.p-column-filter-operator {
+	}
+	.p-column-filter-constraints {
+	}
+
+	// Column Filter Input Styles
+	.p-inputtext.p-component.p-column-filter {
+	}
+
+	// Column Filter Menu Buttons
+	// add rule
+	.p-column-filter-add-rule {
+		button {
+		}
+	}
+
+	// remove rule
+	.p-column-filter-constraint .p-button.p-component.p-column-filter-remove-button {
+	}
+
+	.p-column-filter-buttonbar {
+		// clear
+		.p-button-sm:first-child {
+		}
+		// apply
+		.p-button-sm:last-child {
+		}
+	}
+}
+
+// Dropdown Items Styles
+.p-dropdown-items-wrapper {
+	.p-dropdown-item {
+		&.p-highlight {
+		}
+	}
+}

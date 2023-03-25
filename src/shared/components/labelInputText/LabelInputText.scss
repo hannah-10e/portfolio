@@ -1,0 +1,29 @@
+.htLabelInputText {
+	.htLabel {
+		&.required:after {
+			content: '*';
+			color: red;
+		}
+	}
+
+	.htInputText {
+		.inputContainer {
+			.htIcon {
+			}
+
+			input {
+			}
+
+			.floatingPlaceholder {
+				label {
+				}
+				&:focus-within label,
+				input:not(:placeholder-shown) + label {
+				}
+			}
+		}
+
+		.htInputErrorMessage {
+		}
+	}
+}

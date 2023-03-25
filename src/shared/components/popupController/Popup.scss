@@ -1,0 +1,47 @@
+@import 'src/themes/themes';
+
+.htPopupContent {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.htPopup {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+
+	&:nth-last-of-type(6) {
+		z-index: $popupZIndex6;
+	}
+
+	&:nth-last-of-type(5) {
+		z-index: $popupZIndex5;
+	}
+
+	&:nth-last-of-type(4) {
+		z-index: $popupZIndex4;
+	}
+
+	&:nth-last-of-type(3) {
+		z-index: $popupZIndex3;
+	}
+
+	&:nth-last-of-type(2) {
+		z-index: $popupZIndex2;
+	}
+
+	&:nth-last-of-type(1) {
+		z-index: $popupZIndex1;
+	}
+}

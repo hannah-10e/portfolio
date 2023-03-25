@@ -1,0 +1,52 @@
+.htLabelRadioButton {
+	display: flex;
+	align-items: center;
+
+	.radioButtonContainer {
+		position: relative;
+
+		input {
+			width: 18px;
+			height: 18px;
+			padding: 2px;
+			box-sizing: border-box;
+			opacity: 0;
+			cursor: pointer;
+			margin-right: 8px;
+
+			&:checked ~ .radioButton {
+				border: 1px solid black;
+				.rsBox {
+					height: 100%;
+					width: 100%;
+					background-color: black;
+				}
+			}
+
+			&:hover {
+			}
+		}
+	}
+
+	.htLabel {
+		cursor: pointer;
+	}
+
+	.radioButton {
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		cursor: pointer;
+		border: 1px solid black;
+		padding: 2px;
+		box-sizing: border-box;
+		.htBox {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	}
+}

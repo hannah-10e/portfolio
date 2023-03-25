@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'accordion';
+	src: url('data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBeIAAAC8AAAAYGNtYXDpnwDiAAABHAAAAFxnYXNwAAAAEAAAAXgAAAAIZ2x5ZpzA8vwAAAGAAAAAqGhlYWQgoMdJAAACKAAAADZoaGVhB6cDxwAAAmAAAAAkaG10eA4AABsAAAKEAAAAGGxvY2EAfAA8AAACnAAAAA5tYXhwAAgAGQAAAqwAAAAgbmFtZZlKCfsAAALMAAABhnBvc3QAAwAAAAAEVAAAACAAAwNVAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADpYwPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAQAAAAAwACAACAAQAAQAgADDpY//9//8AAAAAACAAMOlj//3//wAB/+P/1BaiAAMAAQAAAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAbAK0D5QLuABYAADcJARYyNzY0JwEuASMiBgcBBhQXHgE3nQFjAWQbSxsbG/5cDSISEiIN/lwbGxtMG60BZP6cGxsbTBoBpQ0ODg3+WxpMGxoBGwAAAAEAAAABAABzIH8fXw889QALBAAAAAAA3s7BrwAAAADezsGvAAAAAAPlAu4AAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA+UAAQAAAAAAAAAAAAAAAAAAAAYEAAAAAAAAAAAAAAACAAAABAAAAAQAABsAAAAAAAoAFAAeACgAVAAAAAEAAAAGABcAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAHAAAAAQAAAAAAAgAHAGAAAQAAAAAAAwAHADYAAQAAAAAABAAHAHUAAQAAAAAABQALABUAAQAAAAAABgAHAEsAAQAAAAAACgAaAIoAAwABBAkAAQAOAAcAAwABBAkAAgAOAGcAAwABBAkAAwAOAD0AAwABBAkABAAOAHwAAwABBAkABQAWACAAAwABBAkABgAOAFIAAwABBAkACgA0AKRpY29tb29uAGkAYwBvAG0AbwBvAG5WZXJzaW9uIDEuMABWAGUAcgBzAGkAbwBuACAAMQAuADBpY29tb29uAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG5SZWd1bGFyAFIAZQBnAHUAbABhAHJpY29tb29uAGkAYwBvAG0AbwBvAG5Gb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+		format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+.htAccordion {
+	$icomoon-font-family: 'accordion' !default;
+	$icon-chevron-up: '\e963';
+
+	[class^='accordion-'],
+	[class*=' accordion-'] {
+		/* use !important to prevent issues with browser extensions that change fonts */
+		font-family: '#{$icomoon-font-family}' !important;
+		speak: never;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.accordion-chevron-up {
+		&:before {
+			content: $icon-chevron-up;
+		}
+	}
+	width: 100%;
+
+	.header {
+		position: relative;
+		display: flex;
+		overflow: hidden;
+		&:hover {
+			cursor: pointer;
+		}
+		> .ripple {
+			position: absolute;
+			background: rgba(255, 255, 255, 0.3);
+			transform: translate(-50%, -50%);
+			pointer-events: none;
+			border-radius: 50%;
+			animation: ripples 0.6s linear;
+		}
+
+		@keyframes ripples {
+			0% {
+				width: 0;
+				height: 0;
+				opacity: 0.5;
+			}
+			100% {
+				width: 500px;
+				height: 500px;
+				opacity: 0;
+			}
+		}
+	}
+
+	.chevron {
+		margin-left: auto;
+		transition: transform 300ms;
+	}
+
+	.iconSpinDown {
+		transform: rotate(-180deg);
+	}
+
+	.drawer {
+		height: 0;
+		overflow: hidden;
+		transition: height 300ms ease-out;
+
+		&.opened {
+		}
+	}
+}

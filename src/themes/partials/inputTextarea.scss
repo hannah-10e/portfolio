@@ -1,0 +1,50 @@
+@import '../themes';
+
+@mixin rsInputTextarea {
+	.inputTextareaContainer {
+		border: 1px solid var(--darkGray);
+		border-radius: 4px;
+		padding: 8px;
+		background-color: var(--darkGray);
+
+		&:hover {
+			border: 1px solid var(--mediumGray);
+		}
+
+		&:focus-within {
+			border: 1px solid #ff1e1e;
+		}
+
+		textarea,
+		textarea::placeholder {
+			color: var(--mediumGray);
+			font-family: 'Rota', sans-serif;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.08em;
+			background-color: var(--darkGray);
+		}
+
+		textarea {
+			resize: none;
+			&:focus-visible {
+				border: unset;
+				outline: unset;
+			}
+		}
+	}
+
+	.htInputErrorMessage {
+		color: var(--darkGray);
+		font-family: 'Rota', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.08em;
+	}
+}
+
+.App .rsInputTextarea {
+	@include rsInputTextarea;
+}

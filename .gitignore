@@ -1,0 +1,8 @@
+/package-lock.json
+/node_modules/
+/yarn.lock
+/build
+/phpstorm
+/yarn-error.log
+/.idea
+.env.local

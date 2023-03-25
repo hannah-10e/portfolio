@@ -1,0 +1,93 @@
+@import 'src/themes/themes';
+
+.htSelect {
+	[class*='container'] {
+		//Use to target container css
+	}
+
+	[class*='control'] {
+		//Use to target Control css
+		cursor: pointer;
+		&.error {
+			border-color: #f44336;
+		}
+		&:hover {
+		}
+		&:focus-within {
+		}
+	}
+
+	[class*='ValueContainer'] {
+		//Use to target ValueContainer css
+		[class*='singleValue'] {
+		}
+	}
+
+	[class*='ValueContainer2'] {
+		.css-ujecln-Input2 {
+		}
+	}
+
+	[class*='menu'] {
+		//Use to target Menu css
+		[class*='NoOptionsMessage'] {
+		}
+	}
+
+	.css-18ng2q5-group {
+		//Group Title css
+		text-transform: unset;
+	}
+
+	[class*='option'] {
+		//Use to target Menu css
+
+		&[class*='9gakcf-option'] {
+			//Use to target Selected Option
+		}
+
+		&[class*='1n7v3ny-option'] {
+			//Use to target the tabbed/Focused Option
+			&:hover {
+			}
+		}
+	}
+
+	[class*='placeholder'] {
+		//Use to target Placeholder css
+
+		&.error {
+			color: #f44336;
+		}
+	}
+
+	[class*='Input'] {
+		//Use to target Input css
+	}
+
+	[class*='IndicatorsContainer'] {
+		//Use to target the container wrapping the separator and chevron
+	}
+
+	[class*='indicatorSeparator'] {
+		//Use to target the separator between the chevron and Select
+	}
+
+	[class*='indicatorContainer'] {
+		//Use to target the chevron css
+	}
+
+	div[id*='-listbox'] {
+		//Ensure that dropdown is not behind anything
+		z-index: $selectListZIndex;
+	}
+
+	.helperText {
+	}
+
+	.htInputErrorMessage {
+		text-align: left;
+
+		color: #f44336;
+	}
+}

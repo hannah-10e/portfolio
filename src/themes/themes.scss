@@ -1,0 +1,31 @@
+// Font Weights
+$fwThin: 100;
+$fwExtraLight: 200;
+$fwLight: 300;
+$fwRegular: 400;
+$fwMedium: 500;
+$fwSemiBold: 600;
+$fwBold: 700;
+$fwExtraBold: 800;
+$fwBlack: 900;
+$fwExtraBlack: 950;
+
+// Breakpoints
+$mobileBreakpoint: 599;
+$tabletBreakpoint: 700;
+
+//Z-Index
+$toastZIndex: 80;
+$selectListZIndex: 5;
+$pageZIndex: 20;
+$popupZIndex1: 100;
+$popupZIndex2: 99;
+$popupZIndex3: 98;
+$popupZIndex4: 97;
+$popupZIndex5: 96;
+$popupZIndex6: 95;
+
+:export {
+	mobileBreakpoint: var($mobileBreakpoint);
+	tabletBreakpoint: var($tabletBreakpoint);
+}

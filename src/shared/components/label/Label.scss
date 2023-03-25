@@ -1,0 +1,50 @@
+@import 'src/themes/themes.scss';
+.htLabel {
+	&.fwThin {
+		font-weight: $fwThin;
+	}
+
+	&.fwExtraLight {
+		font-weight: $fwExtraLight;
+	}
+
+	&.fwLight {
+		font-weight: $fwLight;
+	}
+
+	&.fwRegular {
+		font-weight: $fwRegular;
+	}
+
+	&.fwMedium {
+		font-weight: $fwMedium;
+	}
+
+	&.fwSemiBold {
+		font-weight: $fwSemiBold;
+	}
+
+	&.fwBold {
+		font-weight: $fwBold;
+	}
+
+	&.fwExtraBold {
+		font-weight: $fwExtraBold;
+	}
+
+	&.fwBlack {
+		font-weight: $fwBlack;
+	}
+
+	&.fwExtraBlack {
+		font-weight: $fwExtraBlack;
+	}
+
+	&.strikethrough {
+		text-decoration: line-through;
+	}
+
+	&.underline {
+		text-decoration: underline;
+	}
+}

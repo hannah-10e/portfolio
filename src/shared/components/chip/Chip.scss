@@ -1,0 +1,48 @@
+.htChip {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	border-radius: 16px;
+	width: fit-content;
+	overflow: hidden;
+	-webkit-tap-highlight-color: transparent;
+	&.standard {
+		background: #dee2e6;
+	}
+	&.outlined {
+		border: 1px solid rgba(255, 255, 255, 0.23);
+	}
+
+	&.disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	&.onClick {
+		&:hover {
+			cursor: pointer !important;
+		}
+	}
+
+	> .ripple {
+		position: absolute;
+		background: #fff;
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+		border-radius: 50%;
+		animation: ripples 0.6s linear infinite;
+	}
+	@keyframes ripples {
+		0% {
+			width: 0;
+			height: 0;
+			opacity: 0.5;
+		}
+		100% {
+			width: 500px;
+			height: 500px;
+			opacity: 0;
+		}
+	}
+}
